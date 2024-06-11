@@ -8,8 +8,9 @@ using namespace std;
 int main(){
     string a;
     ifstream cinf("File1.txt");
+    ofstream coutf("File2.txt");
     while(getline(cinf,a)){
-        cout<<a<<endl;
+        coutf<<a<<endl;
     }
     cinf.close();
 }
